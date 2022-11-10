@@ -4,15 +4,24 @@
 }
 
 body {
-    background-color: #F6F8FC;
+    background-image: url(/assets/img/background.jpg);
+    background-repeat: repeat-y;
+    background-size: auto;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
-    padding: 1rem;
-    background-color: #FFF;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, .9);
     border-radius: 1rem;
+}
+
+.content h1{
+    font-family: 'pokemon', 'Roboto', sans-serif;
+    font-size: 1.9rem;
+    color: rgb(85, 85, 85);
+    text-align: center;
 }
 
 @media screen and (min-width: 992px) {
@@ -23,3 +32,8 @@ body {
         border-radius: 1rem;
     }
 }
+
+@font-face {
+    font-family: 'pokemon';
+    src: url('/assets/font/Pokemon.ttf') format('truetype');
+  }
